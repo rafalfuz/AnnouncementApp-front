@@ -1,19 +1,13 @@
 import React from 'react';
 import './App.css';
+import { Header } from './components/Header/Header';
 
   
 export const App = ()=> {
   return(
     <>
-      <header style={{display: 'flex'}}>
-        <h1>Announcements</h1>
-        <button>Add</button>
-        <input></input>
-        <button>Search</button>
-      </header>
-      <div className='map'>
-
-      </div>
+      <Header />
+      <div className='map'></div>
     </>
   )
 }

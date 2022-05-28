@@ -1,0 +1,28 @@
+.header{
+    width: 100vw;
+    height: 8vh;
+    background-color: #6B5B95;
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tittle{
+    color: white;
+    padding-left: 10px;
+    flex-basis: 25%;
+}
+
+.addBtn{
+    flex-basis: 40%;
+}
+
+.searchSection{
+    flex-basis: 20%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
