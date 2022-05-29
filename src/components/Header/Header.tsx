@@ -3,13 +3,27 @@ import './header.css'
 
 export const Header = () => {
     return (
-        <header className='header'>
+    <header className='header'>
         <h1 className='tittle'>Announcements</h1>
-        <Button className='addBtn' color='secondary' variant="contained" size='large'>Add new advert</Button>
+        <Button 
+            className='addBtn' 
+            color='secondary' 
+            variant="contained" 
+            size='small'
+            >Add new advert
+        </Button>
         <Box className="searchSection">
-            <TextField size='small' placeholder="Find ad..." color='secondary'/>
-            <Button color="secondary" variant="contained" size='small'>Search</Button>
+            <TextField 
+                size='small' 
+                placeholder="Find ad..." 
+                color='secondary'/>
+            <Button 
+                color="secondary" 
+                variant="contained" 
+                size='small'
+                >Search
+            </Button>
         </Box>
-      </header>
+    </header>
     )
 }
