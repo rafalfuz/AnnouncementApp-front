@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet"
+import { SearchContext } from '../context/Context'
 
 import 'leaflet/dist/leaflet.css'
 import './map.css'
 import '../utils/fix-map-icon'
 
+
 export const Map = () => {
+
+    const {search} = useContext(SearchContext)
+
+    useEffect(()=>{
+        console.log('Make request to search for', search)
+    },[search])
 
     return (
         <div className='map'>
@@ -17,7 +25,7 @@ export const Map = () => {
             <Marker position={[52.54402843689452, 19.689938079197297]}>
             <Popup>
                 <h2>Kino</h2>
-                <p>Fajne kino z tradycjami</p>
+                <p>Kino z tradycjami</p>
             </Popup>
             </Marker>
             </MapContainer>
