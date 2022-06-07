@@ -1,6 +1,6 @@
-import { Button, Box, TextField } from "@mui/material"
 import { SyntheticEvent, useContext, useState } from "react"
 import { SearchContext } from '../../context/Context'
+import { Button } from "../Button/Button"
 import './header.css'
 
 export const Header = () => {
@@ -15,19 +15,13 @@ export const Header = () => {
     return (
     <header className='header'>
         <h1 className='tittle'>Announcements</h1>
-        <Button 
-            className='addBtn' 
-            color='secondary' 
-            variant="contained" 
-            size='small'
-            >Add new advert
-        </Button>
-        <Box className="searchSection">
+        <Button text="Add new ad" to='/add'/>
+        <div className="searchSection">
             <form onSubmit={handleSetSearchLocalState}>
             <input value={inputValue} onChange={e=>setInputValue(e.target.value)}></input>
-            <button>Find</button>
+            <Button text='Find'/>
             </form>
-        </Box>
+        </div>
     </header>
     )
 }
