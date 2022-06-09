@@ -14,7 +14,7 @@ export const Header = () => {
     }
     return (
     <header className='header'>
-        <h1 className='tittle'>Announcements</h1>
+        <Button to='/' text="Announcements"/>
         <Button text="Add new ad" to='/add'/>
         <div className="searchSection">
             <form onSubmit={handleSetSearchLocalState}>
